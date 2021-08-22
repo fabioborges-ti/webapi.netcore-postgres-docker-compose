@@ -38,8 +38,8 @@ $ docker ps
 Atente para os seguintes containers:
 
 ```bash
-productapi
-mongo:5.0.2
+smartschool
+postgres
 ```
 
 Se estes foram listados, sucesso! 🤗 Já podemos fazer nossa primeira chamada da API. 👋🏼
