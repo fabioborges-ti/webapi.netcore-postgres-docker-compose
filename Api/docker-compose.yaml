@@ -1,0 +1,43 @@
+version: "3.8"
+
+volumes: 
+  SmartSchoolDb:
+
+networks: 
+  postgresNET:
+  smartschoolNET:
+
+services: 
+
+  postgres:
+    image: "postgres:9.6.22"
+    restart: always
+    container_name: postgres
+    ports: 
+      - "5432:5432"
+    volumes: 
+      - SmartSchoolDb:/var/lib/postgresql/data
+    networks: 
+      - postgresNET
+    environment:
+      - bind-address:0.0.0.0
+      - POSTGRES_DB=smartschooldb
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password123
+
+  smartschool:
+    image: ${DOCKER_REGISTRY-}api
+    container_name: smartschool
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    networks: 
+      - postgresNET
+      - smartschoolNET
+    links:
+      - postgres
+    ports: 
+      - 5000:80
+    depends_on: 
+      - postgres 
+  

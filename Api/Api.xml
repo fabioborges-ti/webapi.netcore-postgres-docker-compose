@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Api</name>
+    </assembly>
+    <members>
+        <member name="T:Api.Controllers.DisciplinesController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.DisciplinesController.#ctor(Microsoft.Extensions.Logging.ILogger{Api.Controllers.DisciplinesController},AutoMapper.IMapper,Api.Data.Interfaces.IRepositoryDisciplines)">
+            <summary>
+            
+            </summary>
+            <param name="logger"></param>
+            <param name="mapper"></param>
+            <param name="repository"></param>
+        </member>
+        <member name="M:Api.Controllers.DisciplinesController.Get">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.DisciplinesController.GetById(System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.DisciplinesController.Post(Api.Data.Dtos.Disciplines.DisciplineDtoCreate)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.DisciplinesController.Put(System.Guid,Api.Data.Dtos.Disciplines.DisciplineDtoUpdate)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.DisciplinesController.Remove(System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Controllers.StudentsController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.StudentsController.#ctor(Microsoft.Extensions.Logging.ILogger{Api.Controllers.StudentsController},AutoMapper.IMapper,Api.Data.Interfaces.IRepositoryStudents)">
+            <summary>
+            
+            </summary>
+            <param name="logger"></param>
+            <param name="mapper"></param>
+            <param name="repository"></param>
+        </member>
+        <member name="M:Api.Controllers.StudentsController.Get">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.StudentsController.GetById(System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.StudentsController.GetByName(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.StudentsController.GetDisciplines(System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.StudentsController.Post(Api.Data.Dtos.Students.StudentDtoCreate)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.StudentsController.Put(System.Guid,Api.Data.Dtos.Students.StudentDtoUpdate)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.StudentsController.Remove(System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.Controllers.TeachersController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.TeachersController.#ctor(Microsoft.Extensions.Logging.ILogger{Api.Controllers.TeachersController},AutoMapper.IMapper,Api.Data.Interfaces.IRepositoryTeachers)">
+            <summary>
+            
+            </summary>
+            <param name="logger"></param>
+            <param name="mapper"></param>
+            <param name="repository"></param>
+        </member>
+        <member name="M:Api.Controllers.TeachersController.Get">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.TeachersController.GetById(System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.TeachersController.GetStudentsByTeacherId(System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.TeachersController.GetDisciplinesByTeacherId(System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.TeachersController.Post(Api.Data.Dtos.Teachers.TeacherDtoCreate)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.TeachersController.Put(System.Guid,Api.Data.Dtos.Teachers.TeacherDtoUpdate)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.Controllers.TeachersController.Remove(System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
